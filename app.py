@@ -22,6 +22,7 @@ import patchpilot_data as data
 APP_NAME = "PatchPilot"
 VULNPULSE_URL = "https://vulnpulse-intel-app.streamlit.app/"
 RISKCALC_URL = "https://div-cve-risk-calc.streamlit.app/"
+EOL_RADAR = "https://eol-radar.streamlit.app/"
 LINKEDIN_URL = "https://www.linkedin.com/in/divyansh-sharma-8113b5113"
 MAX_ROWS = 5000
 PRIO_ICON = {"P1": "🔴", "P2": "🟠", "P3": "🟡", "P4": "🟢"}
@@ -218,6 +219,7 @@ def render_header() -> None:
 <div class="pp-suite">
 <a href="{VULNPULSE_URL}" target="_blank" rel="noopener">VulnPulse: what's new</a>
 <a href="{RISKCALC_URL}" target="_blank" rel="noopener">Risk Calc: what's urgent</a>
+<a href="{EOL_RADAR}" target="_blank" rel="noopener">EOL RADAR: If Application EOL?</a>
 <span class="pp-current">PatchPilot: how to fix it</span>
 </div>
 <div class="pp-brand"><svg width="46" height="46" viewBox="0 0 64 64" role="img" aria-label="PatchPilot logo"><defs><linearGradient id="ppg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b8bff"/><stop offset="1" stop-color="#0a3d91"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#ppg)"/><path d="M32 10 L48 16 V30 C48 41 41 49 32 54 C23 49 16 41 16 30 V16 Z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M24 31 L30 37 L41 25" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><h1>PatchPilot</h1></div>
